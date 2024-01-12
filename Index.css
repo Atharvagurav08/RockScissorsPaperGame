@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  background-color: #4e2a10;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #ffd700;
+  margin-top: 30px;
+  font-size: 2.5em;
+}
+
+.gameButtons {
+  font-size: larger;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensure all buttons are displayed in a line */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gameButtons:hover {
+  background-color: #8b4513;
+}
+
+#resultContainer {
+  margin-top: 40px;
+  color: #ffd700;
+  font-size: 1.2em;
+}
+
+.gameButtons::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+}
+
+
