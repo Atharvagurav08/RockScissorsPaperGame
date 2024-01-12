@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockScissorsPaperGame</title>
+
+  <link rel="stylesheet" href="Index.css">
+
+</head>
+<body>
+  <h1>Rock Scissors Paper </h1>
+  
+  <button class = 'gameButtons'onclick="
+  let computerChoice = checkComputerChoice();
+  let resultMsg = getResult('Rock' , computerChoice);
+  printResult('Rock',computerChoice,resultMsg);
+  "> 🪨 Rock </button>
+  
+  
+  <button  class = 'gameButtons' onclick="
+  computerChoice=checkComputerChoice();
+  resultMsg= getResult('scissors' , computerChoice)
+  printResult('scissors',computerChoice,resultMsg);
+  "> ✂️ Scissors </button>
+  
+  
+  <button  class = 'gameButtons' onclick="
+  computerChoice=checkComputerChoice();
+  resultMsg = getResult('Paper' , computerChoice);
+  printResult('Paper',computerChoice,resultMsg);
+  "> 🗒️ Paper </button>
+
+  <div id="resultContainer"></div>
+  <h3>Score</h3>
+  <div id="Scoring"></div>
+
+
+  <script src="index.js">  </script>
+</body>
+</html>
